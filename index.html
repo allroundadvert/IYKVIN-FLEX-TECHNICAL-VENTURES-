@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>IYKVIN FLEX TECHNICAL VENTURES</title>
 
 <style>
@@ -43,7 +42,7 @@ font-size:16px;
 /* FORM */
 
 .form-box{
-max-width:950px;
+max-width:1000px;
 margin:40px auto;
 padding:30px;
 background:#050505;
@@ -60,27 +59,34 @@ margin-bottom:25px;
 
 .form-grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:15px;
+grid-template-columns:1fr 1fr;
+gap:18px;
 }
 
 .form-grid input,
-.form-grid select{
+.form-grid select,
+.form-grid textarea{
 padding:12px;
 background:#020617;
 border:1px solid #333;
 color:white;
+font-size:15px;
+}
+
+textarea{
+grid-column:span 2;
+height:100px;
 }
 
 /* PRODUCTS */
 
 .products{
-margin-top:25px;
+margin-top:30px;
 }
 
 .products h3{
 color:var(--gold);
-margin-top:20px;
+margin-top:25px;
 }
 
 .products label{
@@ -98,9 +104,24 @@ background:var(--gold);
 border:none;
 font-weight:bold;
 cursor:pointer;
+font-size:16px;
 }
 
-/* WHATSAPP BUTTON */
+/* GOOGLE MAP */
+
+.map{
+max-width:1000px;
+margin:40px auto;
+border:2px solid var(--gold);
+}
+
+.map iframe{
+width:100%;
+height:350px;
+border:0;
+}
+
+/* FLOAT WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -165,6 +186,10 @@ Lagos
 <option>Repair</option>
 </select>
 
+<input id="location" placeholder="Customer Location">
+
+<textarea id="specs" placeholder="Specifications (describe what you need or the repair problem)"></textarea>
+
 </div>
 
 <div class="products">
@@ -176,7 +201,7 @@ Lagos
 <label><input type="checkbox" value="Stainless Steel"> Stainless Steel</label>
 <label><input type="checkbox" value="Cast Iron"> Cast Iron</label>
 <label><input type="checkbox" value="Aluminium"> Aluminium</label>
-<label><input type="checkbox" value="Special Electrodes"> All types of Special Electrodes</label>
+<label><input type="checkbox" value="Special Electrodes"> Special Electrodes</label>
 <label><input type="checkbox" value="Grinding Discs"> Grinding Discs</label>
 <label><input type="checkbox" value="Cutting Discs"> Cutting Discs</label>
 <label><input type="checkbox" value="Safety Items"> Safety Items</label>
@@ -212,6 +237,16 @@ Lagos
 
 </div>
 
+<!-- GOOGLE MAP -->
+
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=iyana%20ipaja%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
 <footer>
 © IYKVIN FLEX TECHNICAL VENTURES
 </footer>
@@ -225,6 +260,8 @@ function sendWhatsApp(){
 let name=document.getElementById("name").value;
 let phone=document.getElementById("phone").value;
 let service=document.getElementById("service").value;
+let location=document.getElementById("location").value;
+let specs=document.getElementById("specs").value;
 
 let products=[];
 document.querySelectorAll('input[type=checkbox]:checked').forEach((item)=>{
@@ -235,7 +272,9 @@ let msg="Customer Request:%0A";
 msg+="Name: "+name+"%0A";
 msg+="Phone: "+phone+"%0A";
 msg+="Service: "+service+"%0A";
-msg+="Products: "+products.join(", ");
+msg+="Location: "+location+"%0A";
+msg+="Products: "+products.join(", ")+"%0A";
+msg+="Specifications: "+specs;
 
 window.open("https://wa.me/2348100573526?text="+msg);
 
