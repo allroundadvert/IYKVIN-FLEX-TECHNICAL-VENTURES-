@@ -22,29 +22,30 @@ color:white;
 
 .header{
 text-align:center;
-padding:30px;
+padding:25px;
 border-bottom:3px solid var(--gold);
 }
 
 .header h1{
 color:var(--gold);
 margin:0;
+font-size:26px;
 }
 
 /* INFO */
 
 .info{
 text-align:center;
-padding:25px;
-font-size:16px;
+padding:20px;
+line-height:1.6;
 }
 
-/* FORM */
+/* FORM BOX */
 
 .form-box{
-max-width:1000px;
-margin:40px auto;
-padding:30px;
+max-width:900px;
+margin:30px auto;
+padding:25px;
 background:#050505;
 border:1px solid var(--gold);
 }
@@ -52,20 +53,17 @@ border:1px solid var(--gold);
 .form-box h2{
 text-align:center;
 color:var(--gold);
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
-/* FORM GRID */
+/* FORM FIELDS */
 
-.form-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:18px;
+.form-field{
+margin-bottom:15px;
 }
 
-.form-grid input,
-.form-grid select,
-.form-grid textarea{
+input,select,textarea{
+width:100%;
 padding:12px;
 background:#020617;
 border:1px solid #333;
@@ -74,19 +72,18 @@ font-size:15px;
 }
 
 textarea{
-grid-column:span 2;
-height:100px;
+height:70px;
 }
 
 /* PRODUCTS */
 
 .products{
-margin-top:30px;
+margin-top:25px;
 }
 
 .products h3{
 color:var(--gold);
-margin-top:25px;
+margin-top:20px;
 }
 
 .products label{
@@ -98,35 +95,34 @@ margin:6px 0;
 
 button{
 width:100%;
-margin-top:25px;
+margin-top:20px;
 padding:15px;
 background:var(--gold);
 border:none;
 font-weight:bold;
 cursor:pointer;
-font-size:16px;
 }
 
-/* GOOGLE MAP */
+/* MAP */
 
 .map{
-max-width:1000px;
 margin:40px auto;
+max-width:900px;
 border:2px solid var(--gold);
 }
 
 .map iframe{
 width:100%;
-height:350px;
+height:300px;
 border:0;
 }
 
-/* FLOAT WHATSAPP */
+/* WHATSAPP BUTTON */
 
 .whatsapp{
 position:fixed;
 right:15px;
-bottom:30px;
+bottom:25px;
 background:#25d366;
 color:white;
 padding:14px 18px;
@@ -135,12 +131,23 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* FOOTER */
+/* MOBILE OPTIMIZATION */
+
+@media (max-width:600px){
+
+.header h1{
+font-size:22px;
+}
+
+.form-box{
+margin:15px;
+}
+
+}
 
 footer{
 text-align:center;
 padding:15px;
-background:#000;
 color:#aaa;
 }
 
@@ -175,21 +182,27 @@ Lagos
 
 <form onsubmit="sendWhatsApp();return false;">
 
-<div class="form-grid">
-
+<div class="form-field">
 <input id="name" placeholder="Name">
+</div>
 
+<div class="form-field">
 <input id="phone" placeholder="Phone Number">
+</div>
 
+<div class="form-field">
+<input id="location" placeholder="Customer Location">
+</div>
+
+<div class="form-field">
 <select id="service">
 <option>Buying</option>
 <option>Repair</option>
 </select>
+</div>
 
-<input id="location" placeholder="Customer Location">
-
-<textarea id="specs" placeholder="Specifications (describe what you need or the repair problem)"></textarea>
-
+<div class="form-field">
+<textarea id="specs" placeholder="Specifications"></textarea>
 </div>
 
 <div class="products">
@@ -237,8 +250,6 @@ Lagos
 
 </div>
 
-<!-- GOOGLE MAP -->
-
 <div class="map">
 
 <iframe
@@ -259,8 +270,8 @@ function sendWhatsApp(){
 
 let name=document.getElementById("name").value;
 let phone=document.getElementById("phone").value;
-let service=document.getElementById("service").value;
 let location=document.getElementById("location").value;
+let service=document.getElementById("service").value;
 let specs=document.getElementById("specs").value;
 
 let products=[];
@@ -271,8 +282,8 @@ products.push(item.value);
 let msg="Customer Request:%0A";
 msg+="Name: "+name+"%0A";
 msg+="Phone: "+phone+"%0A";
-msg+="Service: "+service+"%0A";
 msg+="Location: "+location+"%0A";
+msg+="Service: "+service+"%0A";
 msg+="Products: "+products.join(", ")+"%0A";
 msg+="Specifications: "+specs;
 
