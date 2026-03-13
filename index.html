@@ -18,18 +18,24 @@ background:#000;
 color:white;
 }
 
-/* HEADER */
+/* HEADER IMAGE */
 
-.header{
+.header img{
+width:100%;
+display:block;
+}
+
+/* TITLE */
+
+.title{
 text-align:center;
-padding:25px;
+padding:15px;
 border-bottom:3px solid var(--gold);
 }
 
-.header h1{
+.title h1{
 color:var(--gold);
 margin:0;
-font-size:26px;
 }
 
 /* INFO */
@@ -37,10 +43,9 @@ font-size:26px;
 .info{
 text-align:center;
 padding:20px;
-line-height:1.6;
 }
 
-/* FORM BOX */
+/* FORM */
 
 .form-box{
 max-width:900px;
@@ -56,8 +61,6 @@ color:var(--gold);
 margin-bottom:20px;
 }
 
-/* FORM FIELDS */
-
 .form-field{
 margin-bottom:15px;
 }
@@ -68,7 +71,6 @@ padding:12px;
 background:#020617;
 border:1px solid #333;
 color:white;
-font-size:15px;
 }
 
 textarea{
@@ -83,12 +85,16 @@ margin-top:25px;
 
 .products h3{
 color:var(--gold);
-margin-top:20px;
 }
 
-.products label{
+.product-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:5px 20px;
+}
+
+.product-grid label{
 display:block;
-margin:6px 0;
 }
 
 /* BUTTON */
@@ -117,7 +123,7 @@ height:300px;
 border:0;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -129,20 +135,6 @@ padding:14px 18px;
 border-radius:40px;
 text-decoration:none;
 font-weight:bold;
-}
-
-/* MOBILE OPTIMIZATION */
-
-@media (max-width:600px){
-
-.header h1{
-font-size:22px;
-}
-
-.form-box{
-margin:15px;
-}
-
 }
 
 footer{
@@ -157,6 +149,10 @@ color:#aaa;
 <body>
 
 <div class="header">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/d5a239537d11521000a940819e4474a3348fc6e3/1773346107290.png">
+</div>
+
+<div class="title">
 <h1>IYKVIN FLEX TECHNICAL VENTURES</h1>
 </div>
 
@@ -207,41 +203,50 @@ Lagos
 
 <div class="products">
 
-<h3>CONSUMABLES</h3>
+<h3>PLACE YOUR ORDERS</h3>
+
+<div class="product-grid">
 
 <label><input type="checkbox" value="Mild Steel"> Mild Steel</label>
 <label><input type="checkbox" value="Low Hydrogen"> Low Hydrogen</label>
+
 <label><input type="checkbox" value="Stainless Steel"> Stainless Steel</label>
 <label><input type="checkbox" value="Cast Iron"> Cast Iron</label>
+
 <label><input type="checkbox" value="Aluminium"> Aluminium</label>
 <label><input type="checkbox" value="Special Electrodes"> Special Electrodes</label>
+
 <label><input type="checkbox" value="Grinding Discs"> Grinding Discs</label>
 <label><input type="checkbox" value="Cutting Discs"> Cutting Discs</label>
+
 <label><input type="checkbox" value="Safety Items"> Safety Items</label>
-
-<h3>EQUIPMENTS</h3>
-
 <label><input type="checkbox" value="Angle Grinder"> Angle Grinder</label>
+
 <label><input type="checkbox" value="Drills"> Drills</label>
-<label><input type="checkbox" value="Power Tools Spares"> Armatures / Power Tools Spares</label>
+<label><input type="checkbox" value="Power Tools Spares"> Power Tools Spares</label>
+
 <label><input type="checkbox" value="Magnetic Drill Stand"> Magnetic Drill Stand</label>
 <label><input type="checkbox" value="Welding Transformers"> Welding Transformers</label>
+
 <label><input type="checkbox" value="Welding Rectifiers"> Welding Rectifiers</label>
 <label><input type="checkbox" value="Welding Generating Sets"> Welding Generating Sets</label>
+
 <label><input type="checkbox" value="Compressors"> Compressors</label>
-<label><input type="checkbox" value="Construction Mining Tools"> Construction / Mining Tools</label>
+<label><input type="checkbox" value="Construction Mining Tools"> Construction Tools</label>
+
 <label><input type="checkbox" value="Outboard Engines"> Outboard Engines</label>
+<label><input type="checkbox" value="Oxy Regulators"> Oxy Regulators</label>
 
-<h3>ACCESSORIES</h3>
-
-<label><input type="checkbox" value="Oxy Regulators"> Oxy / Acy Regulators</label>
 <label><input type="checkbox" value="Cutting Torches"> Cutting Torches</label>
 <label><input type="checkbox" value="Nozzle"> Nozzle</label>
+
 <label><input type="checkbox" value="Electrode Holders"> Electrode Holders</label>
 <label><input type="checkbox" value="Flashback Arrestors"> Flashback Arrestors</label>
+
 <label><input type="checkbox" value="Welding Cables"> Welding Cables</label>
 <label><input type="checkbox" value="Welding Hoses"> Welding Hoses</label>
 
+</div>
 </div>
 
 <button type="submit">Submit Request</button>
@@ -251,11 +256,7 @@ Lagos
 </div>
 
 <div class="map">
-
-<iframe
-src="https://maps.google.com/maps?q=iyana%20ipaja%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed">
-</iframe>
-
+<iframe src="https://maps.google.com/maps?q=iyana%20ipaja%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 </div>
 
 <footer>
