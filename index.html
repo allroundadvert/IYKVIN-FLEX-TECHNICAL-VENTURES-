@@ -18,14 +18,10 @@ background:#000;
 color:white;
 }
 
-/* HEADER IMAGE */
-
 .header img{
 width:100%;
 display:block;
 }
-
-/* TITLE */
 
 .title{
 text-align:center;
@@ -38,21 +34,17 @@ color:var(--gold);
 margin:0;
 }
 
-/* INFO */
-
 .info{
 text-align:center;
 padding:20px;
 }
-
-/* GALLERY */
 
 .gallery{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:10px;
 padding:10px;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 }
 
@@ -61,8 +53,6 @@ width:100%;
 border:2px solid var(--gold);
 border-radius:6px;
 }
-
-/* FORM */
 
 .form-box{
 max-width:900px;
@@ -77,20 +67,24 @@ text-align:center;
 color:var(--gold);
 }
 
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
 input,select,textarea{
 width:100%;
 padding:12px;
-margin-top:8px;
 background:#020617;
 border:1px solid #333;
 color:white;
 }
 
 textarea{
-height:70px;
+grid-column:span 2;
+height:60px;
 }
-
-/* PRODUCTS */
 
 .product-grid{
 display:grid;
@@ -98,8 +92,6 @@ grid-template-columns:1fr 1fr;
 gap:6px 20px;
 margin-top:10px;
 }
-
-/* BUTTON */
 
 button{
 width:100%;
@@ -110,8 +102,6 @@ border:none;
 font-weight:bold;
 cursor:pointer;
 }
-
-/* MAP */
 
 .map{
 margin:40px auto;
@@ -124,8 +114,6 @@ width:100%;
 height:300px;
 border:0;
 }
-
-/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -150,8 +138,6 @@ color:#aaa;
 
 <body>
 
-<!-- HEADER IMAGE -->
-
 <div class="header">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0127.jpg">
 </div>
@@ -161,53 +147,60 @@ color:#aaa;
 </div>
 
 <div class="info">
+<p>Dealers on high quality tools and hardware, industrial welding machines, drilling and grinding machines.</p>
 
-<p>
-Dealers on high quality tools and hardware, industrial welding machines, drilling and grinding machines.
-</p>
-
-<p>
-<b>Address:</b><br>
+<p><b>Address:</b><br>
 175 New Abeokuta Expressway Behind BRT Bus Stop Iyana Ipaja Lagos.
 </p>
-
 </div>
-
-<!-- GALLERY -->
 
 <div class="gallery">
 
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0062(1).jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0066(1).jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0067.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0074(1).jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0079(1).jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0087.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0088.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0089.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0090.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0093.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0094.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0095.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0097.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0098.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0100.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0102.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0106(1).jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0108.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0109.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0110.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0113.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0114.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0115.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0116.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0117.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0119.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0120.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0122.jpg">
 
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0129.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0131.jpg">
+
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0133.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0179.jpg">
 
