@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>IYKVIN FLEX TECHNICAL VENTURES</title>
 
 <style>
@@ -18,10 +19,14 @@ background:#000;
 color:white;
 }
 
+/* HEADER */
+
 .header img{
 width:100%;
 display:block;
 }
+
+/* TITLE */
 
 .title{
 text-align:center;
@@ -34,10 +39,14 @@ color:var(--gold);
 margin:0;
 }
 
+/* INFO */
+
 .info{
 text-align:center;
 padding:20px;
 }
+
+/* GALLERY */
 
 .gallery{
 display:grid;
@@ -54,9 +63,11 @@ border:2px solid var(--gold);
 border-radius:6px;
 }
 
+/* FORM */
+
 .form-box{
 max-width:900px;
-margin:30px auto;
+margin:40px auto;
 padding:25px;
 background:#050505;
 border:1px solid var(--gold);
@@ -71,6 +82,7 @@ color:var(--gold);
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:15px;
+margin-top:20px;
 }
 
 input,select,textarea{
@@ -83,25 +95,31 @@ color:white;
 
 textarea{
 grid-column:span 2;
-height:60px;
+height:70px;
 }
+
+/* PRODUCT LIST */
 
 .product-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:6px 20px;
+gap:8px 20px;
 margin-top:10px;
 }
+
+/* BUTTON */
 
 button{
 width:100%;
 margin-top:20px;
-padding:15px;
+padding:14px;
 background:var(--gold);
 border:none;
 font-weight:bold;
 cursor:pointer;
 }
+
+/* MAP */
 
 .map{
 margin:40px auto;
@@ -115,21 +133,9 @@ height:300px;
 border:0;
 }
 
-.whatsapp{
-position:fixed;
-right:15px;
-bottom:20px;
-background:#25d366;
-color:white;
-padding:14px 18px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-}
-
 footer{
 text-align:center;
-padding:15px;
+padding:20px;
 color:#aaa;
 }
 
@@ -137,6 +143,8 @@ color:#aaa;
 </head>
 
 <body>
+
+<!-- HEAD IMAGE -->
 
 <div class="header">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0127.jpg">
@@ -147,12 +155,94 @@ color:#aaa;
 </div>
 
 <div class="info">
-<p>Dealers on high quality tools and hardware, industrial welding machines, drilling and grinding machines.</p>
 
-<p><b>Address:</b><br>
-175 New Abeokuta Expressway Behind BRT Bus Stop Iyana Ipaja Lagos.
+<p>
+Dealers on high quality tools and hardware, industrial welding machines, drilling and grinding machines.
 </p>
+
+<p>
+<b>Address:</b><br>
+175 New Abeokuta Expressway Behind BRT Bus Stop Iyana Ipaja Lagos
+</p>
+
 </div>
+
+<!-- CUSTOMER FORM -->
+
+<div class="form-box">
+
+<h2>Customer Order / Repair Form</h2>
+
+<form>
+
+<div class="form-grid">
+
+<input placeholder="Customer Name">
+
+<input placeholder="Phone Number">
+
+<input placeholder="Customer Location">
+
+<select>
+<option>Buying</option>
+<option>Repair</option>
+</select>
+
+<textarea placeholder="Specifications"></textarea>
+
+</div>
+
+<h3 style="color:#d4af37">Place Your Orders</h3>
+
+<div class="product-grid">
+
+<label><input type="checkbox"> Mild Steel</label>
+<label><input type="checkbox"> Low Hydrogen</label>
+
+<label><input type="checkbox"> Stainless Steel</label>
+<label><input type="checkbox"> Cast Iron</label>
+
+<label><input type="checkbox"> Aluminium</label>
+<label><input type="checkbox"> Special Electrodes</label>
+
+<label><input type="checkbox"> Grinding Discs</label>
+<label><input type="checkbox"> Cutting Discs</label>
+
+<label><input type="checkbox"> Safety Items</label>
+<label><input type="checkbox"> Angle Grinder</label>
+
+<label><input type="checkbox"> Drills</label>
+<label><input type="checkbox"> Magnetic Drill Stand</label>
+
+<label><input type="checkbox"> Welding Transformers</label>
+<label><input type="checkbox"> Welding Rectifiers</label>
+
+<label><input type="checkbox"> Welding Generating Sets</label>
+<label><input type="checkbox"> Compressors</label>
+
+<label><input type="checkbox"> Construction / Mining Tools</label>
+<label><input type="checkbox"> Outboard Engines</label>
+
+<label><input type="checkbox"> Oxy / Acy Regulators</label>
+<label><input type="checkbox"> Cutting Torches</label>
+
+<label><input type="checkbox"> Nozzle</label>
+<label><input type="checkbox"> Electrode Holders</label>
+
+<label><input type="checkbox"> Flashback Arrestors</label>
+<label><input type="checkbox"> Welding Cables</label>
+
+<label><input type="checkbox"> Welding Hoses</label>
+
+</div>
+
+<button type="submit">Submit Request</button>
+
+</form>
+
+</div>
+
+<!-- PRODUCT PICTURES -->
 
 <div class="gallery">
 
@@ -171,33 +261,6 @@ color:#aaa;
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0090.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0093.jpg">
 
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0094.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0095.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0097.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0098.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0100.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0102.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0106(1).jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0108.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0109.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0110.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0113.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0114.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0115.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0116.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0117.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0119.jpg">
-
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0120.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0122.jpg">
-
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0129.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0131.jpg">
 
@@ -206,11 +269,13 @@ color:#aaa;
 
 </div>
 
+<div class="map">
+<iframe src="https://maps.google.com/maps?q=iyana%20ipaja%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+
 <footer>
 © IYKVIN FLEX TECHNICAL VENTURES
 </footer>
-
-<a class="whatsapp" href="https://wa.me/2348100573526">WhatsApp</a>
 
 </body>
 </html>
