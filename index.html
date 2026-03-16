@@ -19,14 +19,10 @@ background:black;
 color:white;
 }
 
-/* HEADER IMAGE */
-
 .header img{
 width:100%;
 display:block;
 }
-
-/* TITLE */
 
 .title{
 text-align:center;
@@ -39,14 +35,10 @@ color:var(--gold);
 margin:0;
 }
 
-/* INFO */
-
 .info{
 text-align:center;
 padding:20px;
 }
-
-/* GALLERY */
 
 .gallery{
 display:grid;
@@ -62,8 +54,6 @@ width:100%;
 border:2px solid var(--gold);
 border-radius:6px;
 }
-
-/* FORM */
 
 .form-box{
 max-width:900px;
@@ -98,8 +88,6 @@ grid-column:span 2;
 height:70px;
 }
 
-/* PRODUCTS CHECKLIST */
-
 .product-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -116,8 +104,6 @@ border:none;
 font-weight:bold;
 cursor:pointer;
 }
-
-/* MAP */
 
 .map{
 margin:40px auto;
@@ -142,10 +128,8 @@ color:#aaa;
 
 <body>
 
-<!-- TOP HEAD IMAGE -->
-
 <div class="header">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0127.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/d5a239537d11521000a940819e4474a3348fc6e3/1773346107290.png">
 </div>
 
 <div class="title">
@@ -164,8 +148,6 @@ Dealers on high quality tools and hardware, industrial welding machines, drillin
 </p>
 
 </div>
-
-<!-- PRODUCT PICTURES -->
 
 <div class="gallery">
 
@@ -189,43 +171,27 @@ Dealers on high quality tools and hardware, industrial welding machines, drillin
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0108.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0109.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0110.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0113.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0114.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0115.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0116.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0117.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0119.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0120.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0122.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0129.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0131.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0133.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0179.jpg">
 
 </div>
-
-<!-- CUSTOMER FORM UNDER PICTURES -->
 
 <div class="form-box">
 
 <h2>Customer Order / Repair Form</h2>
 
-<form>
+<form onsubmit="sendToWhatsApp(); return false;">
 
 <div class="form-grid">
 
-<input placeholder="Customer Name">
+<input id="name" placeholder="Customer Name">
+<input id="phone" placeholder="Phone Number">
+<input id="location" placeholder="Customer Location">
 
-<input placeholder="Phone Number">
-
-<input placeholder="Customer Location">
-
-<select>
+<select id="service">
 <option>Buying</option>
 <option>Repair</option>
 </select>
 
-<textarea placeholder="Specifications"></textarea>
+<textarea id="specs" placeholder="Specifications"></textarea>
 
 </div>
 
@@ -235,40 +201,28 @@ Dealers on high quality tools and hardware, industrial welding machines, drillin
 
 <label><input type="checkbox"> Mild Steel</label>
 <label><input type="checkbox"> Low Hydrogen</label>
-
 <label><input type="checkbox"> Stainless Steel</label>
 <label><input type="checkbox"> Cast Iron</label>
-
 <label><input type="checkbox"> Aluminium</label>
 <label><input type="checkbox"> Special Electrodes</label>
-
 <label><input type="checkbox"> Grinding Discs</label>
 <label><input type="checkbox"> Cutting Discs</label>
-
 <label><input type="checkbox"> Safety Items</label>
 <label><input type="checkbox"> Angle Grinder</label>
-
 <label><input type="checkbox"> Drills</label>
 <label><input type="checkbox"> Magnetic Drill Stand</label>
-
 <label><input type="checkbox"> Welding Transformers</label>
 <label><input type="checkbox"> Welding Rectifiers</label>
-
 <label><input type="checkbox"> Welding Generating Sets</label>
 <label><input type="checkbox"> Compressors</label>
-
 <label><input type="checkbox"> Construction / Mining Tools</label>
 <label><input type="checkbox"> Outboard Engines</label>
-
 <label><input type="checkbox"> Oxy / Acy Regulators</label>
 <label><input type="checkbox"> Cutting Torches</label>
-
 <label><input type="checkbox"> Nozzle</label>
 <label><input type="checkbox"> Electrode Holders</label>
-
 <label><input type="checkbox"> Flashback Arrestors</label>
 <label><input type="checkbox"> Welding Cables</label>
-
 <label><input type="checkbox"> Welding Hoses</label>
 
 </div>
@@ -279,8 +233,6 @@ Dealers on high quality tools and hardware, industrial welding machines, drillin
 
 </div>
 
-<!-- GOOGLE MAP -->
-
 <div class="map">
 <iframe src="https://maps.google.com/maps?q=iyana%20ipaja%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 </div>
@@ -288,6 +240,33 @@ Dealers on high quality tools and hardware, industrial welding machines, drillin
 <footer>
 © IYKVIN FLEX TECHNICAL VENTURES
 </footer>
+
+<script>
+
+function sendToWhatsApp(){
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let location = document.getElementById("location").value;
+let service = document.getElementById("service").value;
+let specs = document.getElementById("specs").value;
+
+let message = "Hello IYKVIN FLEX TECHNICAL VENTURES,%0A%0A"
++ "I want to make an order or repair request.%0A%0A"
++ "Customer Name: " + name + "%0A"
++ "Phone Number: " + phone + "%0A"
++ "Customer Location: " + location + "%0A"
++ "Service Type: " + service + "%0A"
++ "Specifications: " + specs + "%0A%0A"
++ "Please assist me with this request.";
+
+let whatsapp = "https://wa.me/234XXXXXXXXXX?text=" + message;
+
+window.open(whatsapp, "_blank");
+
+}
+
+</script>
 
 </body>
 </html>
