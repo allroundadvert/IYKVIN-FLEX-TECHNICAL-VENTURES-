@@ -3,221 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>IYKVIN FLEX TECHNICAL VENTURES</title>
-
 <style>
-
 :root{
---gold:#d4af37;
+  --gold:#d4af37;
 }
-
 body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:black;
-color:white;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#000;
+  color:#fff;
 }
-
-.header img{
-width:100%;
-display:block;
+.hero{
+  width:100%;
+  height:260px;
+  background:url('https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0127.jpg') center/cover no-repeat;
+  border-bottom:3px solid var(--gold);
 }
-
-.title{
-text-align:center;
-padding:15px;
-border-bottom:3px solid var(--gold);
-}
-
-.title h1{
-color:var(--gold);
-margin:0;
-}
-
 .info{
-text-align:center;
-padding:20px;
+  text-align:center;
+  padding:15px;
 }
-
+.info h2{
+  color:var(--gold);
+  margin-bottom:8px;
+}
 .gallery{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-padding:10px;
-max-width:1100px;
-margin:auto;
+  max-width:1100px;
+  margin:25px auto;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  padding:0 10px;
 }
-
 .gallery img{
-width:100%;
-border:2px solid var(--gold);
-border-radius:6px;
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:6px;
+  border:2px solid var(--gold);
+  box-shadow:0 0 10px rgba(212,175,55,0.5);
 }
-
 .form-box{
-max-width:900px;
-margin:40px auto;
-padding:25px;
-background:#050505;
-border:1px solid var(--gold);
+  max-width:850px;
+  margin:40px auto;
+  padding:25px;
+  background:#050505;
+  border:1px solid var(--gold);
 }
-
 .form-box h2{
-text-align:center;
-color:var(--gold);
+  text-align:center;
+  color:var(--gold);
 }
-
-.form-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:20px;
+label{
+  display:block;
+  margin-top:14px;
+  font-weight:bold;
 }
-
 input,select,textarea{
-width:100%;
-padding:12px;
-background:#020617;
-border:1px solid #333;
-color:white;
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  background:#020617;
+  border:1px solid #333;
+  color:#fff;
 }
-
 textarea{
-grid-column:span 2;
-height:70px;
+  height:80px;
 }
-
-.product-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:8px 20px;
-margin-top:10px;
-}
-
 button{
-width:100%;
-margin-top:20px;
-padding:14px;
-background:var(--gold);
-border:none;
-font-weight:bold;
-cursor:pointer;
+  width:100%;
+  margin-top:20px;
+  padding:15px;
+  background:var(--gold);
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
 }
-
-.map{
-margin:40px auto;
-max-width:900px;
-border:2px solid var(--gold);
-}
-
-.map iframe{
-width:100%;
-height:300px;
-border:0;
-}
-
 footer{
-text-align:center;
-padding:20px;
-color:#aaa;
+  text-align:center;
+  padding:15px;
+  background:#000;
+  color:#aaa;
 }
-
 </style>
 </head>
-
 <body>
 
-<div class="header">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0127.jpg">
-</div>
-
-<div class="title">
-<h1>IYKVIN FLEX TECHNICAL VENTURES</h1>
-</div>
+<div class="hero"></div>
 
 <div class="info">
-
-<p>
-Dealers on high quality tools and hardware, industrial welding machines, drilling and grinding machines.
-</p>
-
-<p>
-<b>Address:</b><br>
-175 New Abeokuta Expressway Behind BRT Bus Stop Iyana Ipaja Lagos
-</p>
-
+<h2>IYKVIN FLEX TECHNICAL VENTURES</h2>
+<p>Dealers on high quality tools and hardware, industrial welding machines, drilling and grinding machines.</p>
+<p><b>Address:</b> 175 New Abeokuta Expressway, behind BRT Bus Stop, Iyana Ipaja, Lagos.</p>
+<p><b>Email:</b> Iykvin@yahoo.com</p>
+<p><b>WhatsApp:</b> 234 810 057 3526</p>
 </div>
 
-<!-- PRODUCT GALLERY -->
+<div class="gallery">
+<!-- Lazy-loaded images -->
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0062(1).jpg" alt="Product 1">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0066(1).jpg" alt="Product 2">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0067.jpg" alt="Product 3">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0074(1).jpg" alt="Product 4">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0079(1).jpg" alt="Product 5">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0087.jpg" alt="Product 6">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0088.jpg" alt="Product 7">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0089.jpg" alt="Product 8">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0090.jpg" alt="Product 9">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0093.jpg" alt="Product 10">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0094.jpg" alt="Product 11">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0095.jpg" alt="Product 12">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0097.jpg" alt="Product 13">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0098.jpg" alt="Product 14">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0100.jpg" alt="Product 15">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0102.jpg" alt="Product 16">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0106(1).jpg" alt="Product 17">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0108.jpg" alt="Product 18">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0109.jpg" alt="Product 19">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0110.jpg" alt="Product 20">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0113.jpg" alt="Product 21">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0114.jpg" alt="Product 22">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0115.jpg" alt="Product 23">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0116.jpg" alt="Product 24">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0117.jpg" alt="Product 25">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0119.jpg" alt="Product 26">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0120.jpg" alt="Product 27">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0122.jpg" alt="Product 28">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0129.jpg" alt="Product 29">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0131.jpg" alt="Product 30">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0133.jpg" alt="Product 31">
+<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0179.jpg" alt="Product 32">
+</div>
 
-<div class="gallery" id="gallery"></div>
-
-<!-- ORDER FORM UNDER PICTURES -->
+<!-- Customer Form -->
 
 <div class="form-box">
-
-<h2>Customer Order / Repair Form</h2>
-
-<form onsubmit="sendToWhatsApp(); return false;">
-
-<div class="form-grid">
-
-<input id="name" placeholder="Customer Name">
-
-<input id="phone" placeholder="Phone Number">
-
-<input id="location" placeholder="Customer Location">
-
-<select id="service">
-<option>Buying</option>
-<option>Repair</option>
-</select>
-
-<textarea id="specs" placeholder="Specifications"></textarea>
-
-</div>
-
-<h3 style="color:#d4af37">Place Your Orders</h3>
-
-<div class="product-grid">
-
-<label><input type="checkbox"> Mild Steel</label>
-<label><input type="checkbox"> Low Hydrogen</label>
-<label><input type="checkbox"> Stainless Steel</label>
-<label><input type="checkbox"> Cast Iron</label>
-<label><input type="checkbox"> Aluminium</label>
-<label><input type="checkbox"> Special Electrodes</label>
-<label><input type="checkbox"> Grinding Discs</label>
-<label><input type="checkbox"> Cutting Discs</label>
-<label><input type="checkbox"> Safety Items</label>
-<label><input type="checkbox"> Angle Grinder</label>
-<label><input type="checkbox"> Drills</label>
-<label><input type="checkbox"> Magnetic Drill Stand</label>
-<label><input type="checkbox"> Welding Transformers</label>
-<label><input type="checkbox"> Welding Rectifiers</label>
-<label><input type="checkbox"> Welding Generating Sets</label>
-<label><input type="checkbox"> Compressors</label>
-<label><input type="checkbox"> Construction / Mining Tools</label>
-<label><input type="checkbox"> Outboard Engines</label>
-<label><input type="checkbox"> Oxy / Acy Regulators</label>
-<label><input type="checkbox"> Cutting Torches</label>
-<label><input type="checkbox"> Nozzle</label>
-<label><input type="checkbox"> Electrode Holders</label>
-<label><input type="checkbox"> Flashback Arrestors</label>
-<label><input type="checkbox"> Welding Cables</label>
-<label><input type="checkbox"> Welding Hoses</label>
-
-</div>
-
-<button type="submit">Submit Request</button>
-
+<h2>Place Your Order</h2>
+<form onsubmit="sendWhatsApp();return false;">
+  <label>Name</label>
+  <input id="name" required>
+  
+  <label>Phone Number</label>
+  <input id="phone" required>
+  
+  <label>Customer Location</label>
+  <input id="location" required>
+  
+  <label>Buying or Repair</label>
+  <select id="action">
+    <option>Buying</option>
+    <option>Repair</option>
+  </select>
+  
+  <label>Choose Products</label>
+  <select id="product" multiple size="6">
+    <option>Mild Steel</option>
+    <option>Low Hydrogen</option>
+    <option>Stainless Steel</option>
+    <option>Cast Iron</option>
+    <option>Aluminium</option>
+    <option>All types of Special Electrodes</option>
+    <option>Grinding Discs</option>
+    <option>Cutting Discs</option>
+    <option>Safety Items</option>
+    <option>Angle Grinder</option>
+    <option>Drills</option>
+    <option>Armatures / Power Tools Spares</option>
+    <option>Magnetic Drill Stand</option>
+    <option>Welding Transformers</option>
+    <option>Welding Rectifiers</option>
+    <option>Welding Generating Sets</option>
+    <option>Compressors</option>
+    <option>Construction / Mining Tools</option>
+    <option>Outboard Engines</option>
+    <option>Oxy / Acy Regulators</option>
+    <option>Cutting Torches</option>
+    <option>Nozzle</option>
+    <option>Electrode Holders</option>
+    <option>Flashback Arrestors</option>
+    <option>Welding Cables</option>
+    <option>Welding Hoses</option>
+  </select>
+  
+  <label>Specifications</label>
+  <textarea id="specs" placeholder="Any special notes"></textarea>
+  
+  <button type="submit">Submit to WhatsApp</button>
 </form>
-
-</div>
-
-<div class="map">
-<iframe src="https://maps.google.com/maps?q=iyana%20ipaja%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 </div>
 
 <footer>
@@ -225,76 +198,28 @@ Dealers on high quality tools and hardware, industrial welding machines, drillin
 </footer>
 
 <script>
-
-/* LOAD ALL IMAGES FROM GITHUB */
-
-const images = [
-"IMG-20260312-WA0062.jpg",
-"IMG-20260312-WA0066.jpg",
-"IMG-20260312-WA0067.jpg",
-"IMG-20260312-WA0074.jpg",
-"IMG-20260312-WA0079.jpg",
-"IMG-20260312-WA0087.jpg",
-"IMG-20260312-WA0088.jpg",
-"IMG-20260312-WA0089.jpg",
-"IMG-20260312-WA0090.jpg",
-"IMG-20260312-WA0093.jpg",
-"IMG-20260312-WA0094.jpg",
-"IMG-20260312-WA0095.jpg",
-"IMG-20260312-WA0097.jpg",
-"IMG-20260312-WA0098.jpg",
-"IMG-20260312-WA0100.jpg",
-"IMG-20260312-WA0102.jpg",
-"IMG-20260312-WA0108.jpg",
-"IMG-20260312-WA0109.jpg",
-"IMG-20260312-WA0110.jpg",
-"IMG-20260312-WA0113.jpg",
-"IMG-20260312-WA0114.jpg",
-"IMG-20260312-WA0115.jpg",
-"IMG-20260312-WA0116.jpg",
-"IMG-20260312-WA0117.jpg",
-"IMG-20260312-WA0119.jpg",
-"IMG-20260312-WA0120.jpg",
-"IMG-20260312-WA0122.jpg",
-"IMG-20260312-WA0129.jpg",
-"IMG-20260312-WA0131.jpg",
-"IMG-20260312-WA0133.jpg",
-"IMG-20260312-WA0179.jpg"
-];
-
-const base="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/";
-
-const gallery=document.getElementById("gallery");
-
-images.forEach(img=>{
-let image=document.createElement("img");
-image.src=base+img;
-gallery.appendChild(image);
-});
-
-/* WHATSAPP SUBMIT */
-
-function sendToWhatsApp(){
-
-var name=document.getElementById("name").value;
-var phone=document.getElementById("phone").value;
-var location=document.getElementById("location").value;
-var service=document.getElementById("service").value;
-var specs=document.getElementById("specs").value;
-
-var message="Hello IYKVIN FLEX TECHNICAL VENTURES,%0A%0A"+
-"I want to make an order or repair request.%0A%0A"+
-"Customer Name: "+name+"%0A"+
-"Phone Number: "+phone+"%0A"+
-"Location: "+location+"%0A"+
-"Service: "+service+"%0A"+
-"Specifications: "+specs+"%0A%0A"+
-"Please assist me.";
-
-window.open("https://wa.me/2348100573526?text="+message,"_blank");
-
+function sendWhatsApp(){
+  let msg = "Customer Order:%0A";
+  msg += "Name: " + document.getElementById("name").value + "%0A";
+  msg += "Phone: " + document.getElementById("phone").value + "%0A";
+  msg += "Location: " + document.getElementById("location").value + "%0A";
+  msg += "Buying or Repair: " + document.getElementById("action").value + "%0A";
+  
+  // Get all selected products
+  let productSelect = document.getElementById("product");
+  let selectedProducts = [];
+  for (let option of productSelect.options) {
+    if(option.selected){
+      selectedProducts.push(option.value);
+    }
+  }
+  msg += "Products: " + selectedProducts.join(", ") + "%0A";
+  
+  msg += "Specifications: " + document.getElementById("specs").value;
+  
+  // Open WhatsApp
+  window.open("https://wa.me/2348100573526?text="+msg);
 }
-
 </script>
 
 </body>
