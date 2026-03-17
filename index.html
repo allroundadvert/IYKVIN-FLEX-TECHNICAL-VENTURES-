@@ -11,7 +11,7 @@ body{
 margin:0;
 font-family:Arial;
 background:#000;
-color:white;
+color:#fff;
 }
 
 .hero{
@@ -21,13 +21,13 @@ background:url('https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TEC
 }
 
 h2{
-color:gold;
 text-align:center;
+color:gold;
 }
 
 .info{
 text-align:center;
-padding:15px;
+padding:20px;
 }
 
 .gallery{
@@ -45,10 +45,17 @@ border:2px solid gold;
 border-radius:6px;
 }
 
-.map{
-width:100%;
-height:300px;
-border:0;
+.products{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-bottom:15px;
+}
+
+.products label{
+display:flex;
+align-items:center;
+gap:6px;
 }
 
 .form-box{
@@ -73,17 +80,10 @@ font-weight:bold;
 cursor:pointer;
 }
 
-.products{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:8px;
-margin-bottom:15px;
-}
-
-.products label{
-display:flex;
-align-items:center;
-gap:6px;
+.map{
+width:100%;
+height:300px;
+border:0;
 }
 
 </style>
@@ -105,8 +105,9 @@ gap:6px;
 <p><b>WhatsApp:</b> 08100573526</p>
 </div>
 
-
 <div class="gallery">
+
+<!-- FAST LOADING IMAGES (lazy enabled) -->
 
 <img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0062(1).jpg">
 <img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0066(1).jpg">
@@ -138,9 +139,8 @@ gap:6px;
 </div>
 
 <iframe class="map"
-src="https://maps.google.com/maps?q=175%20New%20Abeokuta%20Expressway%20Iyana%20Ipaja%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed">
+src="https://maps.google.com/maps?q=175%20New%20Abeokuta%20Expressway%20Iyana%20Ipaja%20Lagos&output=embed">
 </iframe>
-
 
 <div class="form-box">
 
@@ -148,23 +148,20 @@ src="https://maps.google.com/maps?q=175%20New%20Abeokuta%20Expressway%20Iyana%20
 
 <form onsubmit="sendWhatsApp();return false;">
 
-<label>Name</label>
-<input id="name" required>
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Phone Number" required>
+<input id="location" placeholder="Your Location" required>
 
-<label>Phone Number</label>
-<input id="phone" required>
+<h3 style="color:gold">Choose Product</h3>
 
-<label>Customer Location</label>
-<input id="location" required>
+<div class="products">
+<label><input type="checkbox" value="Mild Steel"> Mild Steel</label>
+<label><input type="checkbox" value="Low Hydrogen"> Low Hydrogen</label>
+<label><input type="checkbox" value="Grinding Discs"> Grinding Discs</label>
+<label><input type="checkbox" value="Cutting Discs"> Cutting Discs</label>
+</div>
 
-<label>Buying or Repair</label>
-<select id="action">
-<option>Buying</option>
-<option>Repair</option>
-</select>
-
-<label>Specifications</label>
-<textarea id="specs"></textarea>
+<textarea id="specs" placeholder="Specifications"></textarea>
 
 <button type="submit">Submit Order</button>
 
@@ -181,13 +178,17 @@ var phone=document.getElementById("phone").value;
 var location=document.getElementById("location").value;
 var specs=document.getElementById("specs").value;
 
-var message="Hello IYKVIN FLEX TECHNICAL VENTURES.%0A%0A"
+var selected=[];
+document.querySelectorAll('.products input:checked').forEach(el=>selected.push(el.value));
+
+var msg="Hello IYKVIN FLEX TECHNICAL VENTURES%0A"
 +"Name: "+name+"%0A"
 +"Phone: "+phone+"%0A"
 +"Location: "+location+"%0A"
-+"Specifications: "+specs;
++"Products: "+selected.join(", ")+"%0A"
++"Specs: "+specs;
 
-window.open("https://wa.me/2348100573526?text="+message);
+window.open("https://wa.me/2348100573526?text="+msg);
 
 }
 
