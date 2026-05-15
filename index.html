@@ -3,227 +3,236 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IYKVIN FLEX TECHNICAL VENTURES</title>
+<title>PEACEFUL HOUSEHOLD ITEM NIG. LIMITED</title>
 
 <style>
 body{
-margin:0;
-font-family:Arial;
-background:#000;
-color:#fff;
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:#0a0a0a;
+  color:#f5f5f5;
 }
+:root{--gold:#d4af37}
 
+/* HERO */
 .hero{
-width:100%;
-height:260px;
-background:url('https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0127.jpg') center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  max-height:320px;
+  background:#0a0a0a;
+  border-bottom:4px solid var(--gold);
+}
+.hero img{
+  width:100%;
+  max-height:320px;
+  object-fit:contain;
 }
 
-h2{
-text-align:center;
-color:gold;
-}
-
+/* INFO */
 .info{
-text-align:center;
-padding:20px;
+  text-align:center;
+  padding:15px;
+}
+.info h2{color:var(--gold);}
+.info p{margin:5px 0;}
+
+/* MOVING FIRST TWO IMAGES */
+.moving{
+  overflow:hidden;
+  width:100%;
+}
+.track{
+  display:flex;
+  width:200%;
+  animation:slide 8s linear infinite;
+}
+.track img{
+  width:50%;
+  height:250px;
+  object-fit:cover;
+}
+@keyframes slide{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
 }
 
+/* IMAGE GRID */
 .gallery{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:10px;
-padding:10px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:15px;
 }
-
 .gallery img{
-width:100%;
-height:180px;
-object-fit:cover;
-border:2px solid gold;
-border-radius:6px;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border:2px solid rgba(212,175,55,.4);
 }
 
-.products{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:10px;
-margin-bottom:15px;
-}
-
-.products label{
-display:flex;
-align-items:center;
-gap:6px;
-}
-
+/* FORM */
 .form-box{
-max-width:900px;
-margin:auto;
-padding:20px;
+  max-width:800px;
+  margin:40px auto;
+  padding:25px;
+  border:1px solid rgba(212,175,55,.5);
+  background:#050505;
+}
+.form-box h2{
+  color:var(--gold);
+  text-align:center;
 }
 
-input,select,textarea{
-width:100%;
-padding:10px;
-margin-top:8px;
-margin-bottom:12px;
+.items{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
 }
+
+.items label{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#0c0c0c;
+  padding:12px;
+  border:1px solid #333;
+}
+
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  background:#0c0c0c;
+  border:1px solid #333;
+  color:#fff;
+}
+
+textarea{min-height:100px;}
 
 button{
-width:100%;
-padding:14px;
-background:gold;
-border:none;
-font-weight:bold;
-cursor:pointer;
+  margin-top:25px;
+  width:100%;
+  padding:16px;
+  background:linear-gradient(90deg,#d4af37,#f1d27a);
+  border:none;
+  font-size:18px;
+  font-weight:800;
 }
 
-.map{
-width:100%;
-height:300px;
-border:0;
+/* BUTTONS */
+.whatsapp,.call{
+  position:fixed;
+  right:18px;
+  padding:14px 18px;
+  border-radius:40px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+}
+.whatsapp{bottom:90px;background:#25d366}
+.call{bottom:150px;background:#ff9800}
+
+footer{
+  background:#000;
+  text-align:center;
+  padding:20px;
+  color:#aaa;
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero"></div>
+<!-- TOP IMAGE -->
+<div class="hero">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/0a2e555cd7d73c8f76060edcdb0caffad16dea0b/.github/workflows/1778072717904.png">
+</div>
 
 <div class="info">
-<h2>IYKVIN FLEX TECHNICAL VENTURES</h2>
-
-<p>Dealers on high quality tools and hardware, industrial welding machines, drilling and grinding machines.</p>
-
-<p><b>Address:</b> 175 New Abeokuta Expressway behind BRT Bus Stop Iyana Ipaja Lagos.</p>
-
-<p><b>Email:</b> Iykvin@yahoo.com</p>
-
-<p><b>WhatsApp:</b> 08100573526</p>
+<h2>PEACEFUL HOUSEHOLD ITEM NIG. LIMITED</h2>
+<p>DEALERS IN ALL KINDS OF KITCHEN UTENSILS</p>
+<p><strong>Address:</strong> 18, Ugbugue Str., Off Mission Road, Benin City, Edo State.</p>
+<p><strong>Telephone:</strong> 08082321565, 07041492376</p>
 </div>
 
-<!-- IMAGE GALLERY -->
+<!-- MOVING FIRST TWO -->
+<div class="moving">
+<div class="track">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/download%20(15).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/download%20(16).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/download%20(15).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/download%20(16).webp">
+</div>
+</div>
+
+<!-- OTHER IMAGES -->
 <div class="gallery">
-
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0062(1).jpg">
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0066(1).jpg">
-
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0067.jpg">
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0074(1).jpg">
-
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0079(1).jpg">
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0087.jpg">
-
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0088.jpg">
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0089.jpg">
-
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0090.jpg">
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0093.jpg">
-
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0094.jpg">
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0095.jpg">
-
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0097.jpg">
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0098.jpg">
-
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0100.jpg">
-<img loading="lazy" src="https://raw.githubusercontent.com/allroundadvert/IYKVIN-FLEX-TECHNICAL-VENTURES-/4d78f3e350b1172e9a9ab0eeeb15b01bc57b1580/IMG-20260312-WA0102.jpg">
-
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/images%20(10).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/images%20(11).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/images%20(12).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/images%20(13).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/images%20(14).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/images%20(15).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/images%20(54).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/Amaobi-kitchen-households-and-electronics-/da9a9cdc289ebcdca4a0d118b07e73954d66c703/images%20(56).jpeg">
 </div>
-
-<!-- MAP -->
-<iframe class="map"
-src="https://maps.google.com/maps?q=175%20New%20Abeokuta%20Expressway%20Iyana%20Ipaja%20Lagos&output=embed">
-</iframe>
 
 <!-- FORM -->
 <div class="form-box">
+<h2>Order Form</h2>
+<form onsubmit="send();return false;">
 
-<h2>Place Your Orders</h2>
+<label>Customer Name</label>
+<input id="name">
 
-<form onsubmit="sendWhatsApp();return false;">
+<label>Phone Number</label>
+<input id="phone">
 
-<input id="name" placeholder="Your Name" required>
-<input id="phone" placeholder="Phone Number" required>
-<input id="location" placeholder="Your Location" required>
-
-<h3 style="color:gold">Choose Product</h3>
-
-<div class="products">
-
-<label><input type="checkbox" value="Mild Steel"> Mild Steel</label>
-<label><input type="checkbox" value="Low Hydrogen"> Low Hydrogen</label>
-
-<label><input type="checkbox" value="Stainless Steel"> Stainless Steel</label>
-<label><input type="checkbox" value="Cast Iron"> Cast Iron</label>
-
-<label><input type="checkbox" value="Aluminium"> Aluminium</label>
-<label><input type="checkbox" value="Special Electrodes"> Special Electrodes</label>
-
-<label><input type="checkbox" value="Grinding Discs"> Grinding Discs</label>
-<label><input type="checkbox" value="Cutting Discs"> Cutting Discs</label>
-
-<label><input type="checkbox" value="Safety Items"> Safety Items</label>
-<label><input type="checkbox" value="Angle Grinder"> Angle Grinder</label>
-
-<label><input type="checkbox" value="Drills"> Drills</label>
-<label><input type="checkbox" value="Power Tools Spares"> Power Tools Spares</label>
-
-<label><input type="checkbox" value="Magnetic Drill Stand"> Magnetic Drill Stand</label>
-<label><input type="checkbox" value="Welding Transformers"> Welding Transformers</label>
-
-<label><input type="checkbox" value="Welding Rectifiers"> Welding Rectifiers</label>
-<label><input type="checkbox" value="Welding Generating Sets"> Welding Generating Sets</label>
-
-<label><input type="checkbox" value="Compressors"> Compressors</label>
-<label><input type="checkbox" value="Construction / Mining Tools"> Construction / Mining Tools</label>
-
-<label><input type="checkbox" value="Outboard Engines"> Outboard Engines</label>
-<label><input type="checkbox" value="Oxy / Acy Regulators"> Oxy / Acy Regulators</label>
-
-<label><input type="checkbox" value="Cutting Torches"> Cutting Torches</label>
-<label><input type="checkbox" value="Nozzle"> Nozzle</label>
-
-<label><input type="checkbox" value="Electrode Holders"> Electrode Holders</label>
-<label><input type="checkbox" value="Flashback Arrestors"> Flashback Arrestors</label>
-
-<label><input type="checkbox" value="Welding Cables"> Welding Cables</label>
-<label><input type="checkbox" value="Welding Hoses"> Welding Hoses</label>
-
+<label>Select Items</label>
+<div class="items" id="items">
+<label><input type="checkbox" value="Gas Cooker"> Gas Cooker</label>
+<label><input type="checkbox" value="Microwave"> Microwave</label>
+<label><input type="checkbox" value="Pots"> Pots</label>
+<label><input type="checkbox" value="Broken Plates"> Broken Plates</label>
+<label><input type="checkbox" value="Blender"> Blender</label>
+<label><input type="checkbox" value="Plate Rack"> Plate Rack</label>
+<label><input type="checkbox" value="Air Fryer"> Air Fryer</label>
+<label><input type="checkbox" value="Spoons"> Spoons</label>
+<label><input type="checkbox" value="Kettle"> Kettle</label>
+<label><input type="checkbox" value="DIY Blenders"> Do It Yourself Blenders</label>
 </div>
 
-<textarea id="specs" placeholder="Specifications"></textarea>
+<label>Details</label>
+<textarea id="details"></textarea>
 
-<button type="submit">Submit Order</button>
+<button>Send Order via WhatsApp</button>
 
 </form>
-
 </div>
 
+<footer>© 2026 PEACEFUL HOUSEHOLD ITEM NIG. LIMITED</footer>
+
+<a class="whatsapp" href="https://wa.me/2348082321565">WhatsApp</a>
+<a class="call" href="tel:07041492376">Call</a>
+
 <script>
+function send(){
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const details = document.getElementById("details").value;
 
-function sendWhatsApp(){
+  const items = [...document.querySelectorAll('#items input:checked')]
+    .map(i=>i.value).join(', ');
 
-var name=document.getElementById("name").value;
-var phone=document.getElementById("phone").value;
-var location=document.getElementById("location").value;
-var specs=document.getElementById("specs").value;
+  const msg = `Name: ${name}
+Phone: ${phone}
+Items: ${items}
+Details: ${details}`;
 
-var selected=[];
-document.querySelectorAll('.products input:checked').forEach(el=>selected.push(el.value));
-
-var msg="Hello IYKVIN FLEX TECHNICAL VENTURES%0A"
-+"Name: "+name+"%0A"
-+"Phone: "+phone+"%0A"
-+"Location: "+location+"%0A"
-+"Products: "+selected.join(", ")+"%0A"
-+"Specifications: "+specs;
-
-window.open("https://wa.me/2348100573526?text="+msg);
-
+  window.open("https://wa.me/2348082321565?text="+encodeURIComponent(msg));
 }
-
 </script>
 
 </body>
